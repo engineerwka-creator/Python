@@ -1,6 +1,6 @@
-#wypisz cyfry od 1 do 5 z użyciem pętli for.
+#wypisz cyfry od 1 do 6 z użyciem pętli for.
 
-for i in range(1, 6):
+for i in range(1, 7):
     print(i)
 
 #wypisz cyfry od 1 do 5 z użyciem pętli while.
