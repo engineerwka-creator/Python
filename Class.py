@@ -19,7 +19,7 @@ class Samochod:
 
 auto1 = Samochod("Toyota", "Corolla", "1999", 2000)
 auto2 = Samochod("Ford", "Focus", "1989", 1000)
-auto3 = Samochod("Toyota", "Corolla", "1999", 2000)
+auto3 = Samochod("Tesla", "Model X", "2023", 500)
 if auto1 == auto1:
     print ("Auta są takie same")
 else:
@@ -33,18 +33,6 @@ auto2.zmniejsz_przebieg()
 
 auto1.pokaz_info()
 auto2.pokaz_info()
-
+#
 print (auto1)
-
-def reverse (text):
-    result = ""
-    for c in reversed(text):
-        result += c
-    return result
-
-print (reverse("Karol")  )
-
-def reverse2(text):
-    return text[::-1]
-print (reverse("Karol")  )
 
