@@ -1,184 +1,328 @@
-# #Napisz program, który po wczytaniu trzech liczb całkowitych, wypisze największą.
-# from Assert_Add_Pytest import divide
-# from Lista_Krotki_Słownik_Zbiór import wynik
-#
-# liczby = (12, 8, 100)
-# print (max(liczby))
-# print (min(liczby))
-# #-----------------------------------------------------------------------------------
-# # Napisz program, który wczyta n liczb i obliczy ich sumę.
-#
-# import random
-#
-# def suma():
-#     ilosc = int(input('Podaj ilość liczb do wylosowania: '))
-#     n_liczba = [2, 4, 5, 6, 8, 9, 12, 14, 18, 22, 25, 27, 29, 34, 56]
-#
-#     wylosowane = random.sample(n_liczba, ilosc)
-#     print("Wylosowane liczby:", wylosowane)
-#
-#     wynik = sum(wylosowane)
-#     print("Suma liczb:", wynik)
-#
-# suma()
-#
-# #-----------------------------------------------------------------------------------
-#
-# x = [2, 4, 5, 6, 8, 9, 12, 14, 18, 22, 25, 27, 29, 34, 56]
-# y = [2, 4, 5, 6, 0, 9, 2, 14, 8, 12, 45, 37, 19, 24, 36]
-#
-# for element in x:
-#     if element in y:
-#         print ('Mamy to:' , element)
-#
-# #-----------------------------------------------------------------------------------
-# # Napisz program, który wczyta podaną liczbe "liczb" i obliczy ich sumę.
-# import random
-#
-# digit = [2, 4, 5, 6, 8, 9, 12, 14, 18, 22, 25, 27, 29, 34, 56]
-#
-# wylosowane = int(input('Podaj ilość liczb:  '))
-#
-# losuj = random.sample(digit, wylosowane)
-#
-# suma = sum(losuj)
-#
-# print (losuj)
-# print (suma)
+#Napisz program, który po wczytaniu trzech liczb całkowitych, wypisze największą.
+from Assert_Add_Pytest import divide
+from Lista_Krotki_Słownik_Zbiór import wynik
 
-# #-----------------------------------------------------------------------------------
-#Napisz program, wczyta liczbę wierszy oraz liczbę kolumn i na podstawie tych wartości wygeneruje na ekranie prostokąt złożony z gwiazdek.
-#
-# szerokość = 20
-# długość = 10
-#
-# for i in range(długość):
-#     if i == 0 or i == długość -1:
-#         print('*' * szerokość)
-#     else:
-#         print('*' + ' ' * (szerokość - 2) + '*')
-#
-#
-# szerokość = 20
-# długość = 10
-#
-# for i in range(długość):
-#     if i == 0 or i == długość -5:
-#         print('*' * szerokość)
-#     elif i == 0 or i == długość -1:
-#         print ('*' * szerokość)
-#     else:
-#         print('*' + ' ' * (szerokość - 2) + '*')
+liczby = (12, 8, 100)
+print (max(liczby))
+print (min(liczby))
+#-----------------------------------------------------------------------------------
+# Napisz program, który wczyta n liczb i obliczy ich sumę.
 
-#----------------------------------------------------------------
+import random
 
-# bok = 10
-# i = 1
+def suma():
+    ilosc = int(input('Podaj ilość liczb do wylosowania: '))
+    n_liczba = [2, 4, 5, 6, 8, 9, 12, 14, 18, 22, 25, 27, 29, 34, 56]
 
-# while i <= bok:
-#     print('*' * i)
-#     i = i + 1
-#
-# i = 10 - 1
-#
-# while i >= 1:
-#     print('*' * i)
-#     i = i - 1
-#
-# for i in range(1, bok):
-#      print ('*' * i)
+    wylosowane = random.sample(n_liczba, ilosc)
+    print("Wylosowane liczby:", wylosowane)
 
-# for i in range(1, bok):
-#     spacja = ' ' * (bok -i)
-#     gwiazdki = '*' * (2 * i -1)
-#     print (spacja + gwiazdki)
+    wynik = sum(wylosowane)
+    print("Suma liczb:", wynik)
+
+suma()
+
+#-----------------------------------------------------------------------------------
+
+x = [2, 4, 5, 6, 8, 9, 12, 14, 18, 22, 25, 27, 29, 34, 56]
+y = [2, 4, 5, 6, 0, 9, 2, 14, 8, 12, 45, 37, 19, 24, 36]
+
+for element in x:
+    if element in y:
+        print ('Mamy to:' , element)
+
+#-----------------------------------------------------------------------------------
+# Napisz program, który wczyta podaną liczbe "liczb" i obliczy ich sumę.
+import random
+
+digit = [2, 4, 5, 6, 8, 9, 12, 14, 18, 22, 25, 27, 29, 34, 56]
+
+wylosowane = int(input('Podaj ilość liczb:  '))
+
+losuj = random.sample(digit, wylosowane)
+
+suma = sum(losuj)
+
+print (losuj)
+print (suma)
+
+#-----------------------------------------------------------------------------------
+Napisz program, wczyta liczbę wierszy oraz liczbę kolumn i na podstawie tych wartości wygeneruje na ekranie prostokąt złożony z gwiazdek.
+
+szerokość = 20
+długość = 10
+
+for i in range(długość):
+    if i == 0 or i == długość -1:
+        print('*' * szerokość)
+    else:
+        print('*' + ' ' * (szerokość - 2) + '*')
 
 
-# bok = 10  # długość prostokąta
-# wysokosc = 5
-#
-# for i in range(wysokosc):
-#     if i == 0 or i == wysokosc - 1:
-#         print('*' * bok)  # górna i dolna linia
-#     else:
-#         print('*' + ' ' * (bok - 2) + '*')  # środek
+szerokość = 20
+długość = 10
 
-#----------------------------------------------------------------
-# Napisz program, który będzie wczytywał liczby całkowite do momentu wczytania liczby dwa poraz trzeci.
+for i in range(długość):
+    if i == 0 or i == długość -5:
+        print('*' * szerokość)
+    elif i == 0 or i == długość -1:
+        print ('*' * szerokość)
+    else:
+        print('*' + ' ' * (szerokość - 2) + '*')
 
-# logs_a = (1,2,3,4,5,6,7,8,9)
-# logs_b = (10,11,12,13,14,15,16,17,18,19)
-# logs_c = (2,9,1,8,3,7,6,5,2,5,4,3,9,0,20)
-#
-# logs_all = logs_a + logs_b + logs_c
-#
-# count = 0
-# for x in logs_all:
-#     if x == 2:
-#         count += 1
-#     if count == 3:
-#         print('Liczba 2 pojawiła się trzeci raz')
-#         break
+----------------------------------------------------------------
 
-#----------------------------------------------------------------
-# Napisz program, który będzie wczytywał nazwiska do momentu wczytania nazwiska poraz drugi.
+bok = 10
+i = 1
 
-# klasa_1 = ('bambik', 'jury', 'rambo', 'nowak', 'kalisz', 'malina')
-# klasa_2 = ('rony', 'bajek', 'dycha', 'kafel', 'maniek', 'ryś','bambik')
-# klasa_3 = ('stachu', 'koral', 'calina', 'klama', 'bambik')
-#
-# klasa_all = klasa_1 + klasa_2 + klasa_3
-#
-# widziane = set()
-# powtorzenia = set()
-#
-# for z in klasa_all:
-#     if z in widziane:
-#         powtorzenia.add(z)
-#     else:
-#         widziane.add(z)
-#
-# print("Powtarzające się imiona:", powtorzenia)
-# print("Liczba powtórzeń:", len(powtorzenia))
-#
-# #---------------------------------------------------------------
-# from collections import Counter
-#
-# zbior = (1,2,2,3,4,5,6,2,7,8,2,9)
-#
-# licznik = Counter(zbior)
-#
-# for liczba, policz in licznik.items():
-#     if policz > 3:
-#         print (f'w zbiorze mamy trzy takie same liczby: {liczba}')
-# #-------------------------------------------------------------------
-# Napisz program, który wczyta dwie liczby a i b i następnie wypisze wszystkie liczby z przedziału
-#a <= b
-# """a,b,a + 1, b -1, a + 2, b -2"""
-# a = 2
-# b = 4
-#
-# x = a,b,a +1
-# y = b -1
-# z = a + 2
-# w = b -2
-#
-# q = a,b,a +1, b -1, a + 2, b -2
-# print (q)
+while i <= bok:
+    print('*' * i)
+    i = i + 1
 
-# #-------------------------------------------------------------------
-#Napisz program, który po wczytaniu zdania zamieni wszystkie litery na duże.
-# x = 'Ala ma kota'
-# o = x.upper()
-#
-# print (o)
+i = 10 - 1
 
-# #-------------------------------------------------------------------
-# Napisz program, który policzy liczbę wystąpień frazy "oko" w zadanym tekście.
-#
-# a = 'otookokookotookooko'
-#
-# licznik = a.count('oko')
-# print (licznik)
+while i >= 1:
+    print('*' * i)
+    i = i - 1
 
-## ------------------------------------------------------------------------
+for i in range(1, bok):
+     print ('*' * i)
+
+for i in range(1, bok):
+    spacja = ' ' * (bok -i)
+    gwiazdki = '*' * (2 * i -1)
+    print (spacja + gwiazdki)
+
+
+bok = 10  # długość prostokąta
+wysokosc = 5
+
+for i in range(wysokosc):
+    if i == 0 or i == wysokosc - 1:
+        print('*' * bok)  # górna i dolna linia
+    else:
+        print('*' + ' ' * (bok - 2) + '*')  # środek
+
+----------------------------------------------------------------
+Napisz program, który będzie wczytywał liczby całkowite do momentu wczytania liczby dwa poraz trzeci.
+
+logs_a = (1,2,3,4,5,6,7,8,9)
+logs_b = (10,11,12,13,14,15,16,17,18,19)
+logs_c = (2,9,1,8,3,7,6,5,2,5,4,3,9,0,20)
+
+logs_all = logs_a + logs_b + logs_c
+
+count = 0
+for x in logs_all:
+    if x == 2:
+        count += 1
+    if count == 3:
+        print('Liczba 2 pojawiła się trzeci raz')
+        break
+
+----------------------------------------------------------------
+Napisz program, który będzie wczytywał nazwiska do momentu wczytania nazwiska poraz drugi.
+
+klasa_1 = ('bambik', 'jury', 'rambo', 'nowak', 'kalisz', 'malina')
+klasa_2 = ('rony', 'bajek', 'dycha', 'kafel', 'maniek', 'ryś','bambik')
+klasa_3 = ('stachu', 'koral', 'calina', 'klama', 'bambik')
+
+klasa_all = klasa_1 + klasa_2 + klasa_3
+
+widziane = set()
+powtorzenia = set()
+
+for z in klasa_all:
+    if z in widziane:
+        powtorzenia.add(z)
+    else:
+        widziane.add(z)
+
+print("Powtarzające się imiona:", powtorzenia)
+print("Liczba powtórzeń:", len(powtorzenia))
+
+#---------------------------------------------------------------
+from collections import Counter
+
+zbior = (1,2,2,3,4,5,6,2,7,8,2,9)
+
+licznik = Counter(zbior)
+
+for liczba, policz in licznik.items():
+    if policz > 3:
+        print (f'w zbiorze mamy trzy takie same liczby: {liczba}')
+#-------------------------------------------------------------------
+Napisz program, który wczyta dwie liczby a i b i następnie wypisze wszystkie liczby z przedziału
+a <= b
+"""a,b,a + 1, b -1, a + 2, b -2"""
+a = 2
+b = 4
+
+x = a,b,a +1
+y = b -1
+z = a + 2
+w = b -2
+
+q = a,b,a +1, b -1, a + 2, b -2
+print (q)
+
+#-------------------------------------------------------------------
+Napisz program, który po wczytaniu zdania zamieni wszystkie litery na duże.
+x = 'Ala ma kota'
+o = x.upper()
+
+print (o)
+
+#-------------------------------------------------------------------
+Napisz program, który policzy liczbę wystąpień frazy "oko" w zadanym tekście.
+
+a = 'otookokookotookooko'
+
+licznik = a.count('oko')
+print (licznik)
+
+# ------------------------------------------------------------------------
+Napisz program, który policzy liczbę wystąpień każdej z liter w podanym zdaniu.
+
+x = 'PROGRAMOWANIE JEST SUPER !'
+
+p = x.count('P')
+r = x.count('R')
+o = x.count('O')
+g = x.count('G')
+a = x.count('A')
+m = x.count('M')
+w = x.count('W')
+n = x.count('N')
+i = x.count('I')
+e = x.count('E')
+j = x.count('J')
+s = x.count('S')
+t = x.count('T')
+u = x.count('U')
+
+interpunkcja = x.count('!')
+spacja = x.count(' ')
+
+print ('P:',p, 'R:',r, 'O:',o, 'G:',g, 'A:',a, 'M:',m, 'W:',w, 'N:',n, 'I:',i, 'E:',e, 'J:',j, 'S:',s, 'T:',t, 'U:',u, 'Wykrzyknik:',interpunkcja, 'Spacja:', spacja)
+
+from collections import Counter
+
+x = 'PROGRAMOWANIE JEST SUPER !'
+licznik = Counter(x)
+
+print(licznik)
+
+
+tekst = 'kadjlakjfklashgfkjdsriAKLFDHAJSKHGALGHLKJHGLKASHGD'
+imiona = ('Marek', 'Marek', 'John','AL','AL','AL','Ala','Ala','Ala','Ala','Luk', 'Luk', 'Luk')
+
+licznik = Counter(tekst)
+print ('Wystepowanie Liter:',  licznik)
+
+names = Counter(imiona)
+print ('Ilosc tych samych imion:',  names)
+
+z = imiona.count('AL')
+print ('Ile mamy imion AL:  ', z)
+
+suma_liter = sum(1 for literki in tekst if literki.isalpha())
+print ('Mamy', (suma_liter), 'literek')
+
+logi = ["2025-11-11 09:01:12 ERROR INFO Serwer uruchomiony",
+    "2025-11-11 09:02:05 INFO Połączenie klienta 192.168.0.5",
+    "2025-11-11 09:03:22 ERROR Nie udało się wczytać pliku config.yaml",
+    "2026-11-11 09:04:11 INFO Niska ilość pamięci RAM",
+    "WARNING", "WARNING", "WARNING", "WARNING", "WARNING", "WARNING", "WARNING"
+    "2025-11-11 09:06:30 ERROR Błąd połączenia z bazą danych",
+    "2025-11-11 09:07:12 INFO Operacja zakończona sukcesem",
+    "2025-11-11 09:08:55 ERROR Nieprawidłowy format danych wejściowych",
+    "2025-11-11 09:09:30 INFO Zakończenie pracy programu"]
+
+
+liczba_ERRORS = sum(1 for linia in logi if 'ERROR' in linia)
+print ('Policzylem', liczba_ERRORS, 'ERRORs')
+
+liczba_INFO = sum(1 for linia in logi if 'INFO' in linia)
+print ('Policzylem', liczba_INFO, 'INFO')
+
+liczba_WARNINGS = sum(1 for linia in logi if 'WARNING' in linia)
+print ('Mamy Warnigów: ',  liczba_WARNINGS)
+
+p = any((True) for linia in logi if '2026' in linia)
+print (p)
+
+Długosc = len(logi)
+print ('ilosc_linii_w_logach', Długosc)
+
+logosy = ["ERROR", "INFO", "ERROR", "ERROR", "ERROR", "ERROR"]
+z = logosy.count("ERROR")
+print('Ilość Errorów to:',  z)
+
+from collections import Counter
+
+policz = Counter(x)
+print (policz)
+
+#-----------------------------------------------------------------------------------
+#Napisz program, który wyznaczy najdłuższy ciąg takich samych liter stojących obok siebie.
+from collections import Counter
+from attr.validators import min_len
+
+q = tuple('xxaaabbbbbbbbbbcccccccz')
+
+
+b = q.count('b')
+c = q.count('c')
+
+print (b)
+print (c)
+
+k = sum(1 for d in q if 'b' in d)
+print (k)
+
+h = sum(1 for d in q if 'b' == d)
+print (h)
+
+z = (1,2,3,4,5,6,7,8,9)
+kw = ('fhsdgfhsdagfljHGADSFHJADSGFJSAHDHHHHGFJSDAGFHalJADSGFYERTYUYgfhjdsgfeee')
+
+zak = sum(range(5,9))   #sumuje zakres cyfr od 5 do 8.
+z5 = sum(z, 5)          #sumuje zbiór z + 5.
+z = sum(z)              #sumuje tylko zbiór z.
+
+print (zak)
+print(z5)
+print (z)
+
+print (max(q))          #wypisuje ostatnią literkę
+print (min(q))          #wypisuje pierwszą literkę
+print (q)               #wypisuje po przecinkach literki ze zboiru 'q'
+print (len(q))          #liczy ilość znaków w zbiorze 'q'
+
+
+the_most_popular = max(kw, key=kw.count).upper()
+licznik_a = kw.count(the_most_popular)
+
+print ('Najczęstszy obiekt to:->', the_most_popular)
+print ('Ilość powtórzeń obiektu to:->  ', licznik_a,'\n')
+
+
+the_most_not_popular = min(kw, key=kw.count)
+licznik_b = kw.count(the_most_not_popular)
+
+print ('Najrzadszy obiekt:', the_most_not_popular)
+print ('Ilość powtórzeń obiektu to:->  ', licznik_b, '\n')
+
+
+najczestsza = max(q, key=q.count)
+liczba_powtorzen = q.count(najczestsza)
+
+print("Najczęstsza litera:", najczestsza)
+print("Wystąpień:", liczba_powtorzen)
+
+#-----------------------------------------------------------------
+Zamień w adresie IP kropkę na znak x.
+
+IP = '192.168.10.2'
+print (IP.replace( '.' , 'x'))
